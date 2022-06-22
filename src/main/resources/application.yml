@@ -1,0 +1,23 @@
+
+server:
+  port: 8081
+  servlet:
+    context-path: /hr
+
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@//localhost:1521/orclpdb
+    username: hr
+    password: hr
+    driver-class-name: oracle.jdbc.OracleDriver
+  application:
+    name: hr
+  jpa:
+    properties:
+      hibernate:
+        ddl-auto: validate
+        format_sql: true
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
